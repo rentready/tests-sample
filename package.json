@@ -1,0 +1,18 @@
+{
+  "name": "tests-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/gherkin-testcafe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "gherkin-testcafe": "^5.2.0",
+    "testcafe": "^1.18.4",
+    "testcafe-cucumber-steps": "^1.20.1"
+  }
+}
