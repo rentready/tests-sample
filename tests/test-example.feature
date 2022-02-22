@@ -6,6 +6,7 @@ Feature: Running Cucumber with TestCafe - test feature example
   to learn more about the company.
 
 
-  Scenario: Google's Products page title should contain "Google"
+  Scenario: Google page title should contain "Rent Ready"
     Given I go to URL "https://www.google.com/"
+    # Put missing steps here
     Then the title should contain "Rent Ready"
