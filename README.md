@@ -1,6 +1,6 @@
 # Technical assessment
 In this task, you should finalize the scenario. The user should enter "Rent Ready" into the search bar and click "Search" button.
-The page objects you need here are: "buttonSearch" and "inputSearch". They are implemented in test-page-example.
+The page objects you need here are buttonSearch and inputSearch. They are implemented in test-page-example. Pay attention to the fact that objects and their implementation should be used without quotes.
 
 The project is created using https://github.com/Marketionist/testcafe-cucumber-steps. You can find more examples here.
 
