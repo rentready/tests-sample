@@ -6,7 +6,7 @@ The project is created using https://github.com/Marketionist/testcafe-cucumber-s
 
 The solution should contain:
 1. The [test-example.feature](tests/test-example.feature) file with the complete scenario.
-2. Link to a video recording where you demonstrate tests execution.
+2. Link to a video recording where you demonstrate tests execution starting from the moment you run "npm test" command in CLI.
 
 ## Prerequisites
 - [VS Code](https://code.visualstudio.com/download)
