@@ -8,5 +8,6 @@ Feature: Running Cucumber with TestCafe - test feature example
 
   Scenario: Google page title should contain "Rent Ready"
     Given I go to URL "https://www.google.com/"
-    # Put missing steps here
+    And I type "Rent Ready" in inputSearch from test-page-example
+    When I click buttonSearch from test-page-example
     Then the title should contain "Rent Ready"
