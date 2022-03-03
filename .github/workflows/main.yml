@@ -14,9 +14,17 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+
+      - run: sudo apt-get update
+      - run: sudo apt-get install -y dpkg
+      - run: sudo apt-get install -y libappindicator1 fonts-liberation
+      - run: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      - run: sudo dpkg -i google-chrome*.deb
+      - run: google-chrome --version
+
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           version: 14
       - name: Install dependencies
