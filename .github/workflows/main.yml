@@ -1,0 +1,25 @@
+name: Main Workflow
+
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Run on Ubuntu 20.04 with Node.js 14
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          version: 14
+      - name: Install dependencies
+        run: npm ci
+      - name: Test
+        run: npm test
